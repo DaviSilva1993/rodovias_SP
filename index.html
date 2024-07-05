@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/SP_UFSP_1_1.js"></script><script src="layers/SP_MUNICIPIOSSPMUNICPIOS_2_2.js"></script><script src="layers/L01AUTOBAN_42_3.js"></script><script src="layers/L01AUTOBANFXD_41_4.js"></script><script src="layers/L03TEBE_40_5.js"></script><script src="layers/L03TEBEFXD_39_6.js"></script><script src="layers/L06INTERVIAS_38_7.js"></script><script src="layers/L06INTERVIASFXD_37_8.js"></script><script src="layers/L07ROTA_36_9.js"></script><script src="layers/L07ROTAFXD_35_10.js"></script><script src="layers/L11RENOVIAS_34_11.js"></script><script src="layers/L11RENOVIASFXD_33_12.js"></script><script src="layers/L12VIAOESTE_32_13.js"></script><script src="layers/L12VIAOESTEFXD_31_14.js"></script><script src="layers/L13COLINAS_30_15.js"></script><script src="layers/L13COLINASFXD_29_16.js"></script><script src="layers/L16CART_28_17.js"></script><script src="layers/L16CARTFXD_27_18.js"></script><script src="layers/L19VIARONDON_26_19.js"></script><script src="layers/L19VIARONDONFXD_25_20.js"></script><script src="layers/L20SPVIAS_24_21.js"></script><script src="layers/L20SPVIASFXD_23_22.js"></script><script src="layers/L21TIET_22_23.js"></script><script src="layers/L21TIETFXD_21_24.js"></script><script src="layers/L22ECOVIAS_20_25.js"></script><script src="layers/L22ECOVIASFXD_19_26.js"></script><script src="layers/L23ECOPISTAS_18_27.js"></script><script src="layers/L23ECOPISTASFXD_17_28.js"></script><script src="layers/L24RODOANEL_16_29.js"></script><script src="layers/L24RODOANELFXD_15_30.js"></script><script src="layers/L25SPMAR_14_31.js"></script><script src="layers/L25SPMARFXD_13_32.js"></script><script src="layers/L27TAMOIOS_12_33.js"></script><script src="layers/L27TAMOIOSFXD_11_34.js"></script><script src="layers/L28ENTREVIAS_10_35.js"></script><script src="layers/L28ENTREVIASFXD_9_36.js"></script><script src="layers/L29VIAPAULISTA_8_37.js"></script><script src="layers/L29VIAPAULISTAFXD_7_38.js"></script><script src="layers/L30EIXOSP_6_39.js"></script><script src="layers/L30EIXOSPFXD_5_40.js"></script><script src="layers/L31ECONOROESTE_4_41.js"></script><script src="layers/L31ECONOROESTEFXD_3_42.js"></script>
+        <script src="styles/SP_UFSP_1_1_style.js"></script><script src="styles/SP_MUNICIPIOSSPMUNICPIOS_2_2_style.js"></script><script src="styles/L01AUTOBAN_42_3_style.js"></script><script src="styles/L01AUTOBANFXD_41_4_style.js"></script><script src="styles/L03TEBE_40_5_style.js"></script><script src="styles/L03TEBEFXD_39_6_style.js"></script><script src="styles/L06INTERVIAS_38_7_style.js"></script><script src="styles/L06INTERVIASFXD_37_8_style.js"></script><script src="styles/L07ROTA_36_9_style.js"></script><script src="styles/L07ROTAFXD_35_10_style.js"></script><script src="styles/L11RENOVIAS_34_11_style.js"></script><script src="styles/L11RENOVIASFXD_33_12_style.js"></script><script src="styles/L12VIAOESTE_32_13_style.js"></script><script src="styles/L12VIAOESTEFXD_31_14_style.js"></script><script src="styles/L13COLINAS_30_15_style.js"></script><script src="styles/L13COLINASFXD_29_16_style.js"></script><script src="styles/L16CART_28_17_style.js"></script><script src="styles/L16CARTFXD_27_18_style.js"></script><script src="styles/L19VIARONDON_26_19_style.js"></script><script src="styles/L19VIARONDONFXD_25_20_style.js"></script><script src="styles/L20SPVIAS_24_21_style.js"></script><script src="styles/L20SPVIASFXD_23_22_style.js"></script><script src="styles/L21TIET_22_23_style.js"></script><script src="styles/L21TIETFXD_21_24_style.js"></script><script src="styles/L22ECOVIAS_20_25_style.js"></script><script src="styles/L22ECOVIASFXD_19_26_style.js"></script><script src="styles/L23ECOPISTAS_18_27_style.js"></script><script src="styles/L23ECOPISTASFXD_17_28_style.js"></script><script src="styles/L24RODOANEL_16_29_style.js"></script><script src="styles/L24RODOANELFXD_15_30_style.js"></script><script src="styles/L25SPMAR_14_31_style.js"></script><script src="styles/L25SPMARFXD_13_32_style.js"></script><script src="styles/L27TAMOIOS_12_33_style.js"></script><script src="styles/L27TAMOIOSFXD_11_34_style.js"></script><script src="styles/L28ENTREVIAS_10_35_style.js"></script><script src="styles/L28ENTREVIASFXD_9_36_style.js"></script><script src="styles/L29VIAPAULISTA_8_37_style.js"></script><script src="styles/L29VIAPAULISTAFXD_7_38_style.js"></script><script src="styles/L30EIXOSP_6_39_style.js"></script><script src="styles/L30EIXOSPFXD_5_40_style.js"></script><script src="styles/L31ECONOROESTE_4_41_style.js"></script><script src="styles/L31ECONOROESTEFXD_3_42_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
