@@ -833,7 +833,10 @@ document.getElementsByClassName('gcd-gl-btn')[0].className += ' fa fa-search';
 
 //layerswitcher
 
-
+var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
+map.addControl(layerSwitcher);
+layerSwitcher.hidePanel = function() {};
+layerSwitcher.showPanel();
 
 
 
